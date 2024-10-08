@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Cientifica</title>
+  <script src="calculadora.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Cientifica</h1>
+    <form>
+      <label for="operacion">Operación:</label>
+      <select id="operacion" name="operacion">
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicación">Multiplicación</option>
+        <option value="división">División</option>
+        <option value="seno">Seno</option>
+        <option value="coseno">Coseno</option>
+        <option value="tangente">Tangente</option>
+        <option value="logaritmo natural">Logaritmo natural</option>
+        <option value="logaritmo base 10">Logaritmo base 10</option>
+        <option value="potencia">Potencia</option>
+        <option value="raíz cuadrada">Raíz cuadrada</option>
+      </select>
+      <br><br>
+      <label for="valor1">Valor 1:</label>
+      <input type="number" id="valor1" name="valor1">
+      <br><br>
+      <label for="valor2">Valor 2 (opcional):</label>
+      <input type="number" id="valor2" name="valor2">
+      <br><br>
+      <label for="unidad">Unidad (radianes o grados):</label>
+      <input type="text" id="unidad" name="unidad">
+      <br><br>
+      <button type="button" onclick="calculadora()">Calcular</button>
+      <p id="resultado"></p>
+    </form>
+  </div>
+</body>
+</html>
