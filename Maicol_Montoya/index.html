@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <script src="../Maicol_Montoya/CalculadoraC.js"></script>
+</head>
+<body>
+
+    <h1>Bienvenido a la Calculadora</h1>
+    
+    <label for="operacion">Escoge una operacion</label>
+    <select id="operacion">
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicación</option>
+        <option value="division">División</option>
+        <option value="potencia">Potencia </option>
+        <option value="seno">Seno</option>
+        <option value="coseno">Coseno</option>
+        <option value="tangente">Tangente</option>
+        <option value="logaritmoNatural">Logaritmo Base 2</option>
+        <option value="logaritmoBase10">Logaritmo Base 10</option>
+        <option value="raizCuadrada">Raíz Cuadrada</option>
+        
+    </select>
+    <br>
+
+
+    <label for="num1">Primer dato:</label>
+    <input type="number" id="num1" placeholder="Ingresa el primer número">
+    <br>
+
+   
+    
+    <label for="num2">Segundo dato:</label>
+    <input type="number" id="num2" placeholder="Ingresa el segundo número">
+    <br>
+
+   
+    <label for="tipo_dato">Escoge el tipo del dato:</label>
+    <select id="tipo_dato">
+        <option value="ninguno">Ninguno</option>
+        <option value="radianes">Radianes</option>
+        <option value="grados">Grados</option>
+    </select>
+    <br>
+
+    <div>
+        
+    <button onclick="Calcula_Cientifica()">Calcular =</button>
+
+    <h2> tu resultado es:</h2>
+    <h2><span id="Resultado"></span></h2>
+
+    </div>
+</body>
+</html>
